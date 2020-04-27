@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto',
+  sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+margin: 0 auto;
+width: 1170px;
+}
+
+/* --HEADER-- */
+
+.header__name {
+  margin-top: 60px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 46px;
+}
+.header__nav {
+  margin-bottom: 45px;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__item a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: #000;
+}
+.nav__item a:hover {
+  text-decoration: underline;
+}
+
+/* BANNER */
+
+.site__banner {
+  background: url('../img/photoOtel.jpg') center no-repeat;
+  height: 464px;
+}
+.site__banner .container {
+  padding-top: 46px;
+}
+.banner__icon {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  background-color: #FF7931;
+  border-radius: 50%;
+  margin: 0 auto 32px;
+}
+.banner__icon::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  width: 27px;
+  height: 18px;
+  background: url('../img/banner-svg.svg') center no-repeat;
+}
+.banner__header {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: 32px;
+  margin-bottom: 140px;
+
+}
+.banner__description {
+  width: 456px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.site__reviews h3 {
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 20px;
+}
+
+/* REVIEWS */
+.site__reviews {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.reviews__layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.reviews__news {
+  width: 370px;
+}
+.reviews__news:hover .reviews__name {
+  color: #FF7931;
+}
+.reviews__link {
+  text-decoration: none;
+  color: #000;
+}
+.reviews__name {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 11px;
+}
+.reviews__description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+
+.site__price {
+  background-color: #F7F7F7;
+  overflow: hidden;
+}
+.site__price .container {
+  width: 707px;
+  height: 707px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: -75px auto -75px;
+  padding-top: 108px;
+}
+.price__layout {
+  width: 370px;
+  margin: 0 auto;
+  text-align: center;
+}
+.price__head {
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 35px;
+
+}
+.price__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.price__item b {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.price__item p {
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+.price__item:last-child {
+  padding-bottom: 25px;
+}
+.btn {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  background-color: #FF7931;
+  padding: 17px 30px;
+  padding-right: 60px;
+  margin: 0 auto;
+  
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 29px;
+  width: 25px;
+  height: 25px;
+  background: url('../img/Arrow-button.svg') center center no-repeat;
+}
+
+.site__footer {
+  margin-top: 50px;
+  padding-top: 26px;
+  background-color: #575757;
+  color: #fff;
+  padding-bottom: 46px;
+}
+.footer__head {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.footer__nav .nav__list {
+  padding-bottom: 45px;
+  border-bottom: 2px solid rgba(255, 255, 255, .4);
+}
+.footer__nav a{
+  color: #fff;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  margin-top: 42px;
+  
+
+}
+.social__item a {
+  display: block;
+  width: 47px;
+  height: 47px;
+  margin-right: 14px;
+}
+.social__inst a {
+  background: #fff url('../img/icon-inst.svg') center center no-repeat;
+}
+.social__fb a {
+  background: #fff url('../img/icon-fb.svg') center center no-repeat;
+}
+.social__twitter a {
+  background: #fff url('../img/icon-tw.svg') center center no-repeat;
+}
